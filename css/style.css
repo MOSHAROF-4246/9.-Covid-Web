@@ -1,0 +1,435 @@
+/* all common css start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: 'Space Mono', monospace;
+
+}
+
+
+body{
+    background: #320185;
+}
+
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.clr{
+    clear: both;
+}
+
+ul, li, ol{
+    list-style: none;
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #fff;
+    font-weight: 300;
+}
+
+p{
+    color: #c7c4c4;
+    font-weight: 300;
+}
+.gray-highlight{
+    color: gray;
+    font-weight: 300;
+}
+
+
+/* all common css end */
+
+/* nav bar start here */
+
+nav{
+    width: 100%;
+    height: 80px;
+}
+
+.main-menu{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    background: #320185;
+    border-bottom: #fff solid 1px;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 300px;
+    float: left;
+}
+
+.logo img{
+    width: 55px;
+    height: 55px;
+    margin: 0 40px;
+    margin-top: 12px;
+    animation: logo-image 2s infinite alternate linear;
+    -webkit-animation: logo-image 2s infinite alternate linear;
+}
+
+@keyframes logo-image{
+    from{
+        width: 55px;
+        height: 55px;
+        margin-top: 12px;
+    }
+
+    to{
+        width: 45px;
+        height: 45px;
+        margin-top: 15px;
+    }
+}
+
+.menu{
+    width: 937px;
+    float: left;
+    text-align: right;
+    
+}
+
+.menu ul li a{
+    text-align: center;
+    color: #fff;
+    margin-left: 60px;
+    line-height: 80px;
+    font-size: 16px;
+    position: relative;
+}
+
+.menu ul >li >a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    top: 49%;
+    left: -23px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.menu ul >li >a:hover::after{
+    width: 20px;
+}
+
+/* nav bar end here */
+
+/* banner css start */
+
+#banner{
+    height: 500px;
+}
+
+.banner-text{
+    width: 50%;
+    height: 500px;
+    float: left;
+    padding-top: 120px;
+    position: relative;
+    /* background-color: #ded8d8; */
+}
+
+.banner-text h1{
+    font-size: 50px;
+    line-height: 48px;
+}
+
+.effected-button{
+    padding: 10px 25px;
+    background: #b231dd96;
+    color: #fff;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    font-size: 16px;
+    box-shadow: #f3eeee 3px 3px 10px -2px;
+    position: relative;
+    top: 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    animation: movebutton 2s infinite alternate linear;
+    -webkit-animation: movebutton 2s infinite alternate linear;
+}
+
+@keyframes movebutton {
+    from{
+        margin-top: 0px;
+    }
+
+    to{
+        margin-top: 20px;
+    }
+    
+}
+
+.effected-button:hover{
+    margin-top: 15px;
+}
+
+.banner-image{
+    width: 50%;
+    height: 500px;
+    float: left;
+}
+
+.banner-image img{
+    width: 100%;
+    top: 50%;
+    position: relative;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+}
+
+
+/* banner css end */
+
+/* about section start */
+
+#about{
+    height: 700px;
+}
+
+
+.about-image{
+    width: 50%;
+    height: 700px;
+    float: left;
+    position: relative;
+}
+
+@keyframes about-image {
+    from{
+        width: 50%;
+        /* height: 700px; */
+    }
+
+    to{
+        width: 40%;
+        /* height: 700px; */
+    }
+    
+}
+
+.about-image img{
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    animation: about-image 2s infinite alternate linear;
+    -webkit-animation: about-image 2s infinite alternate linear;
+}
+ 
+
+
+.about-text{
+    width: 50%;
+    height: 700px;
+    float: left;
+    position: relative;
+    padding-top: 100px;
+}
+
+ 
+/* about section end */
+
+/* symptoms section start */
+
+#symptoms{
+    height: 700px;
+}
+
+.symptoms-text{
+    width: 50%;
+    height: 700px;
+    float: left;
+    padding-top: 90px;
+}
+
+.symptoms-img{
+    width: 50%;
+    height: 700px;
+    float: left;
+}
+
+.symptoms-img img{
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+/* symptoms section end */
+
+/* prevention section start */
+
+#prevention{
+    height: 700px;
+}
+
+.prevention-header{
+    width: 100%;
+    height: 100px;
+    float: left;
+    text-align: center;
+    /* border-top: white solid 1px; */
+    /* border-bottom: white solid 1px; */
+}
+
+.prevention-header h1{
+    padding-top: 10px;
+}
+
+.prevention-img{
+    width: 50%;
+    height: 600px;
+    float: left;
+}
+
+.prevention-img img{
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.prevention-text{
+    width: 50%;
+    height: 600px;
+    float: left;
+    padding-top: 48px;
+}
+
+
+/* prevention section end */
+
+/* treatments section start */
+
+#treatments{
+    height: 500px;
+}
+
+.treatment-text{
+    width: 50%;
+    height: 500px;
+    float: left;
+    padding-top: 120px;
+}
+
+.treatment-img{
+    width: 50%;
+    height: 500px;
+    float: left;
+}
+
+.treatment-img img{
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+/* treatments section end */
+
+/* faq section start */
+
+#faq{
+    height: 600px;
+
+}
+
+.faq-header{
+    width: 100%;
+    height: 200px;
+    padding-top: 100px;
+    float: left;
+    text-align: center;
+    position: relative;
+    float: left;
+}
+.faq-text{
+    width: 100%;
+    height: 400px;
+    padding: 20px 50px;
+    position: relative;
+    float: left;
+}
+/* faq section end */
+
+/* footer section start */
+
+footer{
+    height: 250px;
+    /* background: #28006c; */
+}
+
+.footer-img{
+    height: 220px;
+    position: relative;
+    float: left;
+}
+
+.footer-img img{
+    width: 100%;
+    height: 215px;
+
+}
+
+.footer-txt{
+    height: 30px;
+    width: 100%;
+    position: relative;
+    float: left;
+}
+
+.footer-txt p{
+    text-align: center;
+    font-size: 12px;
+}
+/* footer section end */
